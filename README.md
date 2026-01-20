@@ -1,2 +1,2 @@
-# filesolved-website
-Public website for the FileSolved project, hosted through GitHub Pages.
+# FileSolved Website
+This is the public website for FileSolved, hosted on GitHub Pages.
