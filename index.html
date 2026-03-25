@@ -1,24 +1,43 @@
 <!doctype html>
 <html><head><meta charset="utf-8"><title>My Site</title></head>
-<body><h1>Hello from FileSolved</h1><a href="https://cash.app/$filesoved"
+<body><h1>Hello from FileSolved</h1><a <style>
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 12px rgba(0,255,80,0.6); transform:scale(1); }
+    50% { box-shadow: 0 0 28px rgba(0,255,80,1); transform:scale(1.06); }
+    100% { box-shadow: 0 0 12px rgba(0,255,80,0.6); transform:scale(1); }
+}
+
+@keyframes slideIn {
+    0% { opacity:0; transform:translateY(40px); }
+    100% { opacity:1; transform:translateY(0); }
+}
+
+.floating-pay-btn {
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#00ff66;
+    color:#000;
+    padding:18px 28px;
+    border-radius:50px;
+    font-size:20px;
+    font-weight:900;
+    text-decoration:none;
+    animation:pulseGlow 2.4s infinite ease-in-out, slideIn 0.8s ease-out;
+    z-index:9999;
+    transition:0.2s ease;
+    letter-spacing:0.5px;
+}
+
+.floating-pay-btn:hover {
+    transform:scale(1.12);
+    box-shadow:0 0 35px rgba(0,255,80,1);
+}
+</style>
+
+<a href="https://cash.app/$filesoved"
    target="_blank"
-   style="
-      position:fixed;
-      bottom:25px;
-      right:25px;
-      background:#00ff66;
-      color:#000;
-      padding:16px 22px;
-      border-radius:50px;
-      font-size:18px;
-      font-weight:700;
-      text-decoration:none;
-      box-shadow:0 0 20px rgba(0,255,80,0.9);
-      z-index:9999;
-      transition:0.2s ease;
-   "
-   onmouseover="this.style.boxShadow='0 0 30px rgba(0,255,80,1)'"
-   onmouseout="this.style.boxShadow='0 0 20px rgba(0,255,80,0.9)'"
->
-   💸 Pay Now
+   class="floating-pay-btn">
+   💸 PAY NOW
+</a>
 </a></body></html>
